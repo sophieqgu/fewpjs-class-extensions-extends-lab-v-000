@@ -18,5 +18,8 @@ class Polygon {
 }
 
 class Triangle extends Polygon {
-  
+  get isValid() {
+    Array.sort(sides);
+    return sides[0] + sides[1] > sides[2];
+  }
 }
