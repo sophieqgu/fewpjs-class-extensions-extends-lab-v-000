@@ -1,4 +1,6 @@
 // Your code here
 class Polygon {
-  constructur()
+  constructur(...sides) {
+    this.sides = sides
+  }
 }
